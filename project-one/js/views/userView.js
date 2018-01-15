@@ -3,7 +3,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'models/user'], function($, _, Backbone, User){
+    'mustache',
+    'models/user',
+    'models/users'], function($, _, Backbone, Mustache, User, Users){
         var UserView = Backbone.View.extend({
             tagName: "p",
 

@@ -8,7 +8,11 @@ define([
     'views/userView',
     'views/usersView'], function(_, Backbone, Mustache, User, Users, UserView, UsersView){
     var initialize = function(){
-        var user = new User({ name: "Mike" });
+        var user = new User({
+            name: "Mike Bozee",
+            username: "mikebozee",
+            email: "msbozee@gmail.com"
+        });
 
         var userView = new UserView({ el: "#container", model: user });
         userView.render();
